@@ -1,13 +1,67 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-form {
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn {
+  display: flex;
+}
+
+.todo-box {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-box .content {
+  display: flex;
+  align-items: center;
+}
+
+.todo-box .content p {
+  margin-left: 0.5rem;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.todo-box span {
+  margin: 0 5px;
+}
+
+.delete-all {
+  margin-top: 1rem;
+  width: 400px;
+  cursor: pointer;
+}
+
+.actions-box {
+  cursor: pointer;
+}
+
+.back-btn {
+  margin-top: 5px;
+  width: 100%;
 }
